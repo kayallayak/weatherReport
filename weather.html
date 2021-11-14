@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="weather.css">
+    <style>
+        .multicolortext {
+            background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <marquee direction="up">
+        <h2 class="headContent">
+            <span class="multicolortext">WEATHER REPORT</span>
+        </h2>
+    </marquee>
+    <div class="inputContent down_box">
+        <input type="text" class="inputValue" placeholder="ENTER THE CITY NAME">
+        <button onclick="reportFunction()" id="button">Submit</button>
+    </div>
+    <div class="box">
+        <div class="container">
+            <p class="names">* Name Of The City</p>
+            <p class="temp">* Temperature in degree celsius</p>
+            <p class="desc">* Description</p>
+        </div>
+    </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
